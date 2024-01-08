@@ -5,15 +5,21 @@ function get_date_time() {
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var now     = new Date(); 
     var year    = now.getFullYear();
-    var month   = monthNames[now.getMonth()]; 
+    var month   = now.getMonth(); //monthNames[now.getMonth()]; 
     var day     = now.getDate();
     var hour    = now.getHours();
     var minute  = now.getMinutes();
     var second  = now.getSeconds(); 
 
+
     if(day.toString().length == 1) {
          day = '0' + day;
-    }   
+    }
+    if(month.toString().length == 1) {
+        month = month + 1;
+        month = '0' + month;
+    }
+
     if(hour.toString().length == 1) {
          hour = '0' + hour;
     }
@@ -24,7 +30,8 @@ function get_date_time() {
          second = '0' + second;
     }   
 
-    return (day + ' ' + month + ' ' + year + ', ' + hour + ':' + minute + ':' + second);
+    return ('1' + year + '-' + month +  '-' + day + ' ' + hour + ':' +minute)
+    //return (day + ' ' + month + ' ' + year + ', ' + hour + ':' + minute + ':' + second);
 }
 
 function clear_messages() {
@@ -161,7 +168,7 @@ window.show_message = function(text, type) {
     let messages = document.getElementById('messages');
     messages.style.visibility = "visible";
     if (type == 'error') {
-        text = `<li style="color:red;">${text}</li>`;
+        text = `<li style="color:#DC322F;">${text}</li>`;
     }
     messages.innerHTML = `${messages.innerHTML}${text}`;
 };

@@ -13,7 +13,7 @@
 			<li id="time"></li>
 			<li class="right"><a href="javascript:lightdm.shutdown();">shutdown</a></li>
 			<li class="right"><a href="javascript:lightdm.restart();">reboot</a></li>
-			<li class="right"><a href="javascript:lightdm.suspend();">suspend</a></li>
+			<!-- <li class="right"><a href="javascript:lightdm.suspend();">suspend</a></li> -->
 			<li class="right">
 				<div class="custom-select" id="custom-select-div">
 					<select id="session-menu" >
@@ -31,14 +31,15 @@
 			id="username"
 			placeholder="username"
 			class="form-field"
-			required
-			autofocus/>
+			required/>
 			
 			<input type="password"
 			id="password"
 			placeholder="password"
 			required
-			class="form-field"/>
+			class="form-field"
+			autofocus
+			/>
 			
 			<button type="submit" value="login">log in</button>
 		</form>

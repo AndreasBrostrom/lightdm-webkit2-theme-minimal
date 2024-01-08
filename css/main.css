@@ -11,8 +11,8 @@
 body {
     padding: 0;
     margin: 0;
-    background: #0E1621;
-    color: #ECF3F7;
+    background: #2F3D44;
+    color: #C0BFBC;
 }
 
 #main_content {
@@ -23,8 +23,8 @@ body {
     margin: 0;
     padding: 0.5em 0 0.5em 0;
     font-size: 10pt;
-    background: black;
-    color: white;
+    background: #222D31;
+    color: #D8DEE9;
 }
 
 #main_nav a:hover {
@@ -79,7 +79,7 @@ body {
 }
 
 a {
-    color: gray;
+    color: #C0BFBC;
     cursor: pointer;
     cursor: hand;
     text-decoration: none;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .text-muted {
-    color: gray;
+    color: #676767;
 }
 
 ul {
@@ -140,7 +140,7 @@ button {
 }
 
 h1 {
-    color: #ECF3F7;
+    color: #C0BFBC
 }
 
 p {
@@ -164,11 +164,11 @@ p {
 }
 
 .select-selected {
-    color: #84abff;
+    color: #33B498;
 }
 
 .select-selected :hover {
-    color: #4882ff;
+    color: #33B498;
 }
   
 .select-items {
@@ -189,6 +189,5 @@ p {
 }
   
 .select-items div:hover {
-    background-color: rgba(146, 145, 145, 0.1);
+    background-color: #9291911a;
 }
-
